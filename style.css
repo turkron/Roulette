@@ -1,0 +1,62 @@
+#RouletteTitle {
+    margin: auto;
+    text-align:center;
+}
+
+#RouletteOutput {
+    border: 1px solid black;
+    align-content: center;
+    background: transparent;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+}
+
+#textOutput {
+    color: black;
+    font-size:28px;
+    margin:25px;
+    text-shadow: inherit;
+}
+
+#BettingTable {
+    padding-top:15%;
+    margin:auto;
+}
+
+#playerInfo{
+    width:100px;
+    border: 1px solid black;
+}
+#playGameSection {
+    padding-top:10%;
+}
+#playGame{
+    width:20%;
+    margin-left:40%
+}
+p {
+    margin: 0;
+    text-align: center;
+}
+
+.bettingSection {
+    border: 1px solid black;
+    width: 100px;
+    align-content: center
+}
+
+.bettingButton{
+    width:100%;
+}
+
+#StartButton {
+    position:absolute;
+    top:45%;
+    left:45%;
+}
+
+#winningOutcome {
+    margin-top: 5%;
+    text-align:center;
+}

@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.10.1/lodash.min.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <title>Roulette</title>
+    <link type="text/css" rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <script type="text/javascript" src="main.js"></script>
+
+    <template id="bettingSection">
+        <td class="bettingSection">
+            <p></p>
+            <p></p>
+            <button class="bettingButton">+</button>
+            <button class="bettingButton">-</button>
+        </td>
+    </template>
+    <template id="emptySection">
+        <td></td>
+    </template>
+    
+
+    <div class="container">
+        <div id="StartScreen">
+            <button onclick="startGame(0)" class="btn" id="StartButton">Open Game</button>
+        </div>
+
+        <div id="GameScreen" style="visibility: hidden">
+            <div id="playerInfo">
+                <p>Player-0</p>
+                <p id="player0AccountValue">???</p>
+            </div>
+            <div id="RouletteTitle">
+                Result
+                <div id="RouletteOutput">
+                    <p id="textOutput">???</p>
+                </div>
+            </div>
+
+            <div id="playGameSection">
+                <button id="playGame" onclick="resolveGame()">
+                    Finish betting
+                </button>
+            </div>
+
+            <div id="winningOutcome">
+                
+            </div>
+
+            <table id="BettingTable">
+                <tr>
+                    <td colspan="6" style="text-align:center">
+                        Odds: 1/1
+                    </td>
+                </tr>
+                <tr id="row0"></tr>
+                <tr>
+                    <td colspan="6" style="text-align:center">
+                        Odds: 35/1
+                    </td>
+                </tr>
+                <tr id="row1"></tr>
+                <tr id="row2"></tr>
+                <tr id="row3"></tr>
+                <tr id="row4"></tr>
+                <tr id="row5"></tr>
+                <tr id="row6"></tr>
+
+                <tr>
+                    <td colspan="6" style="text-align:center">
+                        Odds: 17/1
+                    </td>
+                </tr>
+                <tr id="row7"></tr>
+                <tr id="row8"></tr>
+                <tr id="row9"></tr>
+                <tr id="row10"></tr>
+                <tr id="row11"></tr>
+                <tr id="row12"></tr>
+
+                <tr>
+                    <td colspan="6" style="text-align:center">
+                        Odds: 11/1
+                    </td>
+                </tr>
+                <tr id="row13"></tr>
+                <tr id="row14"></tr>
+                <tr id="row15"></tr>
+                <tr id="row16"></tr>
+                <tr id="row17"></tr>
+                <tr id="row18"></tr>
+            </table>
+        </div>
+
+
+    </div>
+</body>
+</html>
